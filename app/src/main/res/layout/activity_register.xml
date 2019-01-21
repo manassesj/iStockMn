@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    tools:context=".gui.user.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRegisterCompanyRegister"
+                android:text="@string/company_register"
+                style="@style/title_register_or_edit" />
+
+
+            <ImageView
+                android:id="@+id/editImageRegister"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                app:srcCompat="@drawable/ic_user"
+                android:layout_gravity="center"
+                android:contentDescription="@string/company_picture"/>
+
+            <Button
+                android:layout_width="100dp"
+                style="@style/button_primary"
+                android:text="@string/change"
+                android:onClick="pickImage"
+                android:layout_gravity="center"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_weight="1"
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editCompanyNameRegister"
+                    style="@style/edit_text"
+                    android:hint="@string/company_name"
+                    android:inputType="text"
+                    app:layout_constraintBottom_toTopOf="@+id/editFullNameRegister" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editFullNameRegister"
+                    style="@style/edit_text"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editEmailRegister"
+                    style="@style/edit_text"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editPasswordRegister"
+                    style="@style/edit_text"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+            <EditText
+                android:id="@+id/editPasswordConfirmRegister"
+                style="@style/edit_text"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonRegisterRegister"
+                style="@style/button_primary"
+                android:onClick="register"
+                android:text="@string/sign_up"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

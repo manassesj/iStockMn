@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    tools:context=".gui.user.FirstAccess">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewFirstAccess"
+                android:text="@string/first_access"
+                style="@style/title_register_or_edit" />
+
+            <ImageView
+                android:id="@+id/editImageRegister"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="@string/company_picture"
+                android:focusable="true"
+                android:onClick="pickImage"
+                app:srcCompat="@drawable/ic_user" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/set_your_new_password_access"
+                style="@style/switch_button"
+                android:textAlignment="center"/>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editPasswordFirstAccess"
+                    style="@style/edit_text"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editPasswordConfirmFirstAccess"
+                    style="@style/edit_text"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                style="@style/button_primary"
+                android:onClick="confirm"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

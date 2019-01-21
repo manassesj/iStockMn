@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bsi.mpoo.istock">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".gui.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gui.user.RegisterActivity" />
+        <activity android:name=".gui.ForgotActivity" />
+        <activity android:name=".gui.client.RegisterClientActivity" />
+        <activity
+            android:name=".gui.MainActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".gui.client.EditClientActivity" />
+        <activity android:name=".gui.product.RegisterProductActivity" />
+        <activity android:name=".gui.product.EditProductActivity" />
+        <activity android:name=".gui.user.EditUserActivity" />
+        <activity android:name=".gui.user.RegisterUserActivity" />
+        <activity android:name=".gui.user.FirstAccess" />
+        <activity android:name=".gui.user.SettingsActivity" />
+        <activity android:name=".gui.user.SettingsHelperActivity" />
+        <activity android:name=".gui.historic.EditOrderActivity" />
+        <activity android:name=".gui.sales.RegisterOrderActivity" />
+        <activity android:name=".gui.product.ProductsActivity" />
+        <activity android:name=".gui.user.UsersActivity" />
+        <activity android:name=".gui.client.ClientsActivity" />
+        <activity android:name=".gui.sales.ProductsOrderActivity" />
+        <activity android:name=".gui.historic.HistoricActivity"></activity>
+    </application>
+
+</manifest>

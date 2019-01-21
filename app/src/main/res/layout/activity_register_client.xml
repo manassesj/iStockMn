@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".gui.client.RegisterClientActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top">
+
+            <TextView
+                android:id="@+id/textViewRegisterClient"
+                android:text="@string/clients_register"
+                style="@style/title_register_or_edit"/>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                android:id="@+id/editTextNameRegisterClient"
+                style="@style/edit_text"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editTextStreetRegisterClient"
+                    style="@style/edit_text"
+                    android:hint="@string/street"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editTextNumberRegisterClient"
+                    style="@style/edit_text"
+                    android:hint="@string/number"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editTextDistrictRegisterClient"
+                    style="@style/edit_text"
+                    android:hint="@string/district"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editTextCityRegisterClient"
+                    style="@style/edit_text"
+                    android:hint="@string/city"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editTextStateRegisterClient"
+                    style="@style/edit_text"
+                    android:hint="@string/state"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editTextPhoneRegisterClient"
+                    style="@style/edit_text"
+                    android:hint="@string/phone"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonRegisterRegisterClient"
+                style="@style/button_primary"
+                android:onClick="register"
+                android:text="@string/sign_up"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

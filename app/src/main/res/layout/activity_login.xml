@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".gui.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="64dp"
+                android:layout_marginEnd="8dp"
+                app:srcCompat="@drawable/logo"
+                android:contentDescription="@string/logotipo" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editEmailLogin"
+                    android:layout_marginTop="64dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    style="@style/edit_text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editPasswordLogin"
+                    style="@style/edit_text"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Switch
+                android:id="@+id/switchButtonLogin"
+                style="@style/switch_button"
+                android:text="@string/keep_logged" />
+
+            <Button
+                android:id="@+id/buttonLoginLogin"
+                style="@style/button_primary"
+                android:onClick="login"
+                android:text="@string/login" />
+
+            <Button
+                android:id="@+id/buttonCreateAccountLogin"
+                style="@style/button_secondary"
+                android:onClick="CreateAccount"
+                android:text="@string/create_account" />
+
+            <TextView
+                android:id="@+id/textForgotLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/forgot_text"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textEnterHereClickableLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="forgotPassword"
+                android:text="@string/enter_here"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

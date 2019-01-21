@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".gui.user.SettingsActivity"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/textViewSettingsSettings"
+            android:text="@string/settings_account"
+            style="@style/title_register_or_edit" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_user"
+                android:id="@+id/pictureSettings"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                style="@style/button_primary"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:text="@string/change"
+                android:onClick="pickImage"/>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/companyInputLayoutSettings">
+
+                <EditText
+                    android:id="@+id/editCompanyNameSettings"
+                    style="@style/edit_text"
+                    android:hint="@string/company_name"
+                    android:inputType="text"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:onClick="editCompany"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editFullNameSettings"
+                    style="@style/edit_text"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:onClick="editName"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editEmailSettings"
+                    style="@style/edit_text"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:onClick="editEmail"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout">
+
+                <EditText
+                    android:id="@+id/editPasswordSettings"
+                    style="@style/edit_text"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:onClick="editPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/deleteButtonSettings"
+                style="@style/button_secondary"
+                android:background="@android:color/holo_red_dark"
+                android:onClick="delete"
+                android:text="@string/delete_my_account"
+                android:textColor="@android:color/white" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

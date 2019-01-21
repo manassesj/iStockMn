@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_sales"
+            android:icon="@drawable/ic_sales"
+            android:title="@string/sales" />
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/ic_product"
+            android:title="@string/products" />
+        <item
+            android:id="@+id/nav_clients"
+            android:icon="@drawable/ic_client"
+            android:title="@string/clients" />
+
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@drawable/ic_user"
+            android:title="@string/users" />
+
+        <item
+            android:id="@+id/nav_historic"
+            android:icon="@drawable/ic_historic"
+            android:title="@string/historic_sales"/>
+
+    </group>
+
+    <item android:title="@string/advanced">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_information"
+                android:title="@string/about" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/logout"
+
+            />
+        </menu>
+    </item>
+
+</menu>

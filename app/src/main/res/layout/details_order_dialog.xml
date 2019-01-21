@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="22sp"
+                android:text="@string/name"
+                android:textColor="@color/colorPrimary"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/nameDetailsDialogOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:ems="10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/created"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/createdDetailsDialogOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:ems="10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/delivery"
+                android:id="@+id/deliveryTitleDetailsDialogOrder"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/deliveryDetailsDialogOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:ems="10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/products"
+                android:ems="10" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".gui.fragments.ProductsOrderFragment"
+                android:layout_margin="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerviewProductsOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/total"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/totalDetailsDialogOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:ems="10" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

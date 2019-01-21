@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    tools:context=".gui.sales.RegisterOrderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/finalization_sale"
+                style="@style/title_register_or_edit" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_weight="1"
+                style="@style/text_input_layout">
+
+                <AutoCompleteTextView
+                    android:id="@+id/editNameCart"
+                    style="@style/edit_text"
+                    android:hint="@string/full_name"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerviewCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                </android.support.v7.widget.RecyclerView>
+
+            </ScrollView>
+
+            <Switch
+                style="@style/switch_button"
+                android:id="@+id/switchButtonCart"
+                android:text="Encomenda"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateCartTextInputLayout"
+                android:visibility="gone">
+
+                <EditText
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateCart"
+                    android:hint="@string/delivery_date"
+                    android:focusableInTouchMode="false"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/switch_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    style="@style/switch_button"
+                    android:id="@+id/totalOrderCart"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/saveCart"
+                    style="@style/button_primary"
+                    android:layout_weight="1"
+                    android:onClick="save"
+                    android:text="@string/save" />
+
+                <Button
+                    android:id="@+id/cancelCart"
+                    style="@style/button_secondary"
+                    android:layout_weight="1"
+                    android:onClick="cancel"
+                    android:text="@string/cancel" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

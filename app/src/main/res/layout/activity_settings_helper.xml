@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.user.SettingsHelperActivity"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewSettingsSettingsHelper"
+                style="@style/title_register_or_edit" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/companyInputLayoutSettingsHelperShow"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editCompanyNameSettingsHelperShow"
+                    style="@style/edit_text"
+                    android:hint="@string/currenty_company_name"
+                    android:inputType="text"
+                    android:focusableInTouchMode="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/companyInputLayoutSettingsHelper"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editCompanyNameSettingsHelper"
+                    style="@style/edit_text"
+                    android:hint="@string/new_company_name"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/nameInputLayoutSettingsHelperShow"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editFullNameSettingsHelperShow"
+                    style="@style/edit_text"
+                    android:hint="@string/currenty_name"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/nameInputLayoutSettingsHelper"
+                android:visibility="gone">
+
+                <EditText
+                        android:id="@+id/editFullNameSettingsHelper"
+                        style="@style/edit_text"
+                        android:hint="@string/new_name"
+                        android:inputType="textPersonName"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/emailInputLayoutSettingsHelperShow"
+                android:visibility="gone">
+
+
+                <EditText
+                        android:id="@+id/editEmailSettingsHelperShow"
+                        style="@style/edit_text"
+                        android:hint="@string/currenty_email"
+                        android:inputType="textEmailAddress"
+                        android:focusableInTouchMode="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/emailInputLayoutSettingsHelper"
+                android:visibility="gone">
+
+
+                <EditText
+                        android:id="@+id/editEmailSettingsHelper"
+                        style="@style/edit_text"
+                        android:hint="@string/new_email"
+                        android:inputType="textEmailAddress"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/passwordInputLayoutSettingsHelperOld"
+                android:visibility="gone">
+
+
+                <EditText
+                        android:id="@+id/editPasswordSettingsHelperOld"
+                        style="@style/edit_text"
+                        android:hint="@string/currenty_password"
+                        android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/passwordInputLayoutSettingsHelper"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editPasswordSettingsHelper"
+                    style="@style/edit_text"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/text_input_layout"
+                android:id="@+id/passwordInputLayoutSettingsHelperConfirmation"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editPasswordSettingsHelperConfirmation"
+                    style="@style/edit_text"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/button_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="save"
+                    android:text="@string/save" />
+
+                <Button
+                    style="@style/button_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="cancel"
+                    android:text="@string/cancel" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
