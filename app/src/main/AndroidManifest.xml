@@ -38,7 +38,8 @@
         <activity android:name=".gui.client.ClientsActivity" />
         <activity android:name=".gui.sales.ProductsOrderActivity" />
         <activity android:name=".gui.historic.HistoricActivity" />
-        <activity android:name=".gui.sales.Recomendados"></activity>
+        <activity android:name=".gui.sales.Recommend" />
+        <activity android:name=".gui.fragments.Home"></activity>
     </application>
 
 </manifest>

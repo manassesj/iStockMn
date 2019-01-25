@@ -22,6 +22,7 @@ import bsi.mpoo.istock.domain.Producer;
 import bsi.mpoo.istock.domain.Salesman;
 import bsi.mpoo.istock.domain.Session;
 import bsi.mpoo.istock.gui.client.ClientsActivity;
+import bsi.mpoo.istock.gui.fragments.Home;
 import bsi.mpoo.istock.gui.fragments.HomeFragment;
 import bsi.mpoo.istock.gui.historic.HistoricActivity;
 import bsi.mpoo.istock.gui.product.ProductsActivity;
@@ -132,6 +133,7 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         FloatingActionButton floatingActionButton = findViewById(R.id.floatingButton);
         if (id == R.id.nav_home){
+            startAActivity(Home.class);
             fragment = new HomeFragment();
             floatingActionButton.hide();
         } else if (id == R.id.nav_sales){
@@ -167,6 +169,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         return true;
     }
 }

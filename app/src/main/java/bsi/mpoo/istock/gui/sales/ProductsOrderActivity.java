@@ -8,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,7 +17,6 @@ import bsi.mpoo.istock.domain.Cart;
 import bsi.mpoo.istock.domain.Product;
 import bsi.mpoo.istock.domain.Session;
 import bsi.mpoo.istock.gui.MainActivity;
-import bsi.mpoo.istock.services.order.OrderRecommend;
 import bsi.mpoo.istock.services.product.ProductOrderListAdapter;
 import bsi.mpoo.istock.services.product.ProductServices;
 
@@ -83,7 +81,7 @@ public class ProductsOrderActivity extends AppCompatActivity {
     }
 
     public void recommend(View view){
-        Intent intent = new Intent(getApplicationContext(),Recomendados.class);
+        Intent intent = new Intent(getApplicationContext(),Recommend.class);
         startActivity(intent);
     }
 
