@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -17,6 +18,7 @@ import bsi.mpoo.istock.domain.Cart;
 import bsi.mpoo.istock.domain.Product;
 import bsi.mpoo.istock.domain.Session;
 import bsi.mpoo.istock.gui.MainActivity;
+import bsi.mpoo.istock.services.order.OrderRecommend;
 import bsi.mpoo.istock.services.product.ProductOrderListAdapter;
 import bsi.mpoo.istock.services.product.ProductServices;
 
@@ -24,7 +26,6 @@ public class ProductsOrderActivity extends AppCompatActivity {
 
     private Object account;
     private RecyclerView recyclerView;
-    private RecyclerView recyclerViewRec;
     private ProductOrderListAdapter adapter;
     private ImageView cartView;
 
@@ -81,14 +82,9 @@ public class ProductsOrderActivity extends AppCompatActivity {
         account = Session.getInstance().getAccount();
     }
 
-    public void listProdct(View view){
-        recyclerView.setVisibility(View.VISIBLE);
-        recyclerViewRec.setVisibility(View.INVISIBLE);
-    }
-
-    public void listRecommend(View view){
-        recyclerViewRec.setVisibility(View.VISIBLE);
-        recyclerView.setVisibility(View.INVISIBLE);
+    public void recommend(View view){
+        Intent intent = new Intent(getApplicationContext(),Recomendados.class);
+        startActivity(intent);
     }
 
     @Override
@@ -106,7 +102,6 @@ public class ProductsOrderActivity extends AppCompatActivity {
         if (account instanceof Administrator){
             productArrayList = productServices.getAcitiveProductsAsc(Session.getInstance().getAdministrator());
             recyclerView = findViewById(R.id.recyclerviewOrder);
-            recyclerViewRec = findViewById(R.id.recyclerviewRec);
             adapter = new ProductOrderListAdapter(this, productArrayList, cartView);
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));

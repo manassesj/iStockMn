@@ -5,22 +5,33 @@ import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
 import bsi.mpoo.istock.R;
 import bsi.mpoo.istock.domain.Cart;
 import bsi.mpoo.istock.domain.Item;
+import bsi.mpoo.istock.domain.Product;
+import bsi.mpoo.istock.domain.Session;
+import bsi.mpoo.istock.services.order.OrderRecommend;
+import bsi.mpoo.istock.services.product.ProductServices;
 
 public class DialogQuantity {
     private Context context;
     private LinearLayout linearLayout;
     private ImageView cart;
+    private ProductServices productServices;
 
     public DialogQuantity(Context context, LinearLayout linearLayout, ImageView cart) {
         this.context = context;
         this.linearLayout = linearLayout;
         this.cart = cart;
+        this.productServices = new ProductServices(context);
     }
 
 
@@ -62,6 +73,8 @@ public class DialogQuantity {
                     Cart.getInstance().addItem(item);
                     linearLayout.setBackgroundColor(context.getColor(R.color.greenLight));
                     cart.setBackgroundResource(R.drawable.ic_sales_after);
+
+
                 }
 
 
