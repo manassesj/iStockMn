@@ -5,20 +5,13 @@ import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 
 import bsi.mpoo.istock.R;
 import bsi.mpoo.istock.domain.Cart;
 import bsi.mpoo.istock.domain.Item;
-import bsi.mpoo.istock.domain.Product;
-import bsi.mpoo.istock.domain.Session;
-import bsi.mpoo.istock.services.order.OrderRecommend;
 import bsi.mpoo.istock.services.product.ProductServices;
 
 public class DialogQuantity {

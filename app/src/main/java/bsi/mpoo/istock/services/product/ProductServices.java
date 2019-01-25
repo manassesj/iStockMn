@@ -61,6 +61,10 @@ public class ProductServices {
         return (ArrayList<Product>) productDAO.getActiveProductsByAdmId(administrator ,Contract.DESC);
     }
 
+    public  ArrayList<Product> getProductsByAdm(Administrator administrator){
+        return (ArrayList<Product>) productDAO.getProductsByAdmId(administrator,Contract.ASC);
+    }
+
     public Product getProductById(long id){
         return productDAO.getProductById(id);
     }

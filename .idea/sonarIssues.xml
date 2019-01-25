@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="C:/iStock-m/app/src/main/java/bsi/mpoo/istock/services/SlopeOne.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
@@ -79,6 +84,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/bsi/mpoo/istock/services/order/OrderServices.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/bsi/mpoo/istock/services/order/Populate.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/bsi/mpoo/istock/services/order/SlopeOne.java">
           <value>
             <set />
           </value>

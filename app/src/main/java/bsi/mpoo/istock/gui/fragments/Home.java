@@ -31,7 +31,6 @@ public class Home extends AppCompatActivity {
 
         barChart = findViewById(R.id.grahpRec);
 
-        Toast.makeText(getApplicationContext(),months.get(0).toString() + months.get(1).toString(),Toast.LENGTH_LONG).show();
 
         ArrayList<BarEntry> entries = new ArrayList<>();
         entries.add(new BarEntry(1f,months.get(0)));
